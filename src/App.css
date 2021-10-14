@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
+
+
+
+*, body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    margin: 5rem;
+    width: calc(100% - 10rem);
+    height: calc(100% - 10rem);
+    background-image: url(/src/Images/bg_img_1.jpg);
+    background-size: 70px 70px;
+    background-repeat: round;
+    background-attachment: fixed;
+}
+
+
+
+/* HERO SECTION */
+.hero_section {
+    margin-top: 15rem;
+    margin-left: 10rem;
+    margin-bottom: 10rem;
+}
+.hero_section h1 {
+    font-size: 6rem;
+}
+.hero_section h2 {
+    font-size: 3rem;
+    color: #666;
+}
+
+
+
+/* ABOUT ME SECTION */
+.aboutme_section {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    padding: 0 5rem;
+}
+.aboutme_section > * {
+    margin: 1rem;
+}
+.aboutme_section .content {
+    flex: 5;
+}
+.aboutme_section .image {
+    flex: 3;
+}
+.aboutme_section .shape1_img {
+    height: 15rem;
+    position: relative;
+}
+.aboutme_section .me_img {
+    height: 40rem;
+}
