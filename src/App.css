@@ -21,6 +21,14 @@ body {
 
 
 
+/* COMMON */
+.section_heading {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+
+
 /* HERO SECTION */
 .hero_section {
     margin-top: 15rem;
@@ -49,9 +57,6 @@ body {
 }
 .aboutme_section .content {
     flex: 5;
-}
-.aboutme_section .content h1 {
-    font-size: 2.5rem;
 }
 .aboutme_section .image {
     flex: 3;
@@ -101,10 +106,6 @@ body {
     background: radial-gradient(closest-side, #e66465, transparent);
     backdrop-filter: blur( 2px );
     border-radius: 20rem;
-}
-.skills_section h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
 }
 @keyframes load{
     from {width: 0%}
@@ -162,9 +163,6 @@ body {
 .project_section {
     margin: 15rem 0;
 }
-.project_section h1 {
-    font-size: 2.5rem;
-}
 .project_section .project {
     display: flex;
     align-items: flex-end;
@@ -197,4 +195,46 @@ body {
 }
 .project_img img {
     height: 40rem;
+}
+
+
+
+
+/* GET IN TOUCH SECTION */
+.contact_section {
+    display: flex;
+    margin: 15rem 10rem;
+}
+.contact_section .content {
+    flex: 2;
+    padding: 0px 2rem;
+}
+.social_icons {
+    margin-top: 2rem;
+}
+.social_icons > * {
+    font-size: 2rem;
+    margin: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.social_icons > *:hover {
+    color: #333;
+    cursor: pointer;
+}
+.contact_section .form {
+    flex: 3;
+    padding: 0px 5rem;
+}
+.form {
+    background: radial-gradient(closest-side, #e66465, transparent);
+    backdrop-filter: blur( 2px );
+    border-radius: 20rem;
+}
+.form input, .form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+}
+.form input:focus, .form textarea:focus {
+    outline: none;
 }

@@ -21,7 +21,7 @@ function App() {
 
       <section className='aboutme_section'>
         <div className='content'>
-          <h1>ABOUT ME</h1>
+          <h1 className='section_heading'>ABOUT ME</h1>
           <p>Hi, my name is Glenn Catteeuw, a multidisciplinary designer & art director based in Belgium. With a passion for well-crafted (digital) experiences, I believe in beauty to empower ideas.</p>
         </div>
         <div className='image'>
@@ -41,7 +41,7 @@ function App() {
 
 
       <section class="skills_section">
-        <h1>SKILLS</h1>
+        <h1 className='section_heading'>SKILLS</h1>
         <div class="bar back learning" data-skill="Kotlin"></div>
         <div class="bar mid basic" data-skill="Android Studio"></div>
         <div class="bar mid intermediate" data-skill="Git GitHub"></div>
@@ -52,7 +52,7 @@ function App() {
 
 
       <section className="project_section">
-        <h1>PROJECTS</h1>
+        <h1 className='section_heading'>PROJECTS</h1>
 
         <div className='project'>
           <div className='project_desc'>
@@ -84,6 +84,32 @@ function App() {
           </div>
         </div>
       </section>
+
+
+
+      <section className='contact_section'>
+        <div className='content'>
+          <h1 className='section_heading'>GET IN TOUCH</h1>
+          <p>"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molesti</p>
+          <div className='social_icons'>
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-youtube-square"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-github-square"></i>
+          </div>
+        </div>
+        <div className='form'>
+          <input type="text" id="name" placeholder="Enter your name" />
+          <input type="text" id="email" placeholder="Enter your email" />
+          <input type="text" id="phone" placeholder="Enter your phone number" />
+          <textarea id="mssg" rows="4" placeholder="Enter message"></textarea>
+        </div>
+
+      </section>
+
+      <footer>
+        <p>Inspired by This Repo</p>
+      </footer>
 
 
 
