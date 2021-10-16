@@ -12,7 +12,7 @@ body {
     width: calc(100% - 10rem);
     height: calc(100% - 10rem);
     background-image: url(./Images/bg_img_1.jpg);
-    background-size: 70px 70px;
+    background-size: 150px 150px;
     background-repeat: round;
     background-attachment: fixed;
     overflow-x: hidden;
@@ -226,7 +226,7 @@ body {
 /* GET IN TOUCH SECTION */
 .contact_section {
     display: flex;
-    margin: 15rem 10rem;
+    margin: 15rem 10rem 5rem 10rem;
 
     .img_shape {
         height: 25rem;
@@ -264,5 +264,21 @@ body {
                 outline: none;
             }
         }
+
+        button {
+            padding: 5px 20px;
+            margin: 10px 5px;
+            border: 2px #ccc solid;
+            background-color: #fff;
+            &:hover {
+                cursor: pointer;
+            }
+        }
     }
+}
+
+
+
+footer {
+    font-size: 12px;
 }

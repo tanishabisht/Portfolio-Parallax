@@ -2,7 +2,7 @@
 
 - [x] Squared resposnsive background
 - [x] parallax effect 
-- [ ] Moving bg objects
+- [x] Moving bg objects
 - [ ] Side menu option
 - [ ] Responsive 
-- [ ] Automated Email
+- [x] Automated Email

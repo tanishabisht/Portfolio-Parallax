@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta name="description" content="Web site created using create-react-app"/>
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     
     <!-- ICONS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -17,4 +15,20 @@
   <body>
     <div id="root"></div>
   </body>
+
+  <script>    
+    const container = document.querySelector('.bg');
+    const shape_1 = document.querySelector('.img_shape_1');
+    const shape_2 = document.querySelector('.img_shape_2');
+    const shape_3 = document.querySelector('.img_shape_3');
+    const shape_4 = document.querySelector('.img_shape_4');
+    container.addEventListener('mousemove', (e) => {
+      const mouse_x_position = e.pageX * -1 / 20;
+      const mouse_y_position = e.pageY * -1 / 20;
+      shape_1.style.transform = `translate(${mouse_x_position}px, ${mouse_y_position + 100}px)`;
+      shape_2.style.transform = `translate(${mouse_x_position}px, ${mouse_y_position + 100}px)`;
+      shape_3.style.transform = `translate(${mouse_x_position}px, ${mouse_y_position + 100}px) rotate(-20deg)`;
+      shape_4.style.transform = `translate(${mouse_x_position}px, ${mouse_y_position + 300}px)`;
+    })
+  </script>
 </html>
