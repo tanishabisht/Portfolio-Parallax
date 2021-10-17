@@ -6,3 +6,8 @@
 - [ ] Side menu option
 - [ ] Responsive 
 - [x] Automated Email
+
+
+
+
+- [x] png project images

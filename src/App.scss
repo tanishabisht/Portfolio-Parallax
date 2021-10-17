@@ -11,7 +11,7 @@ body {
     margin: 5rem;
     width: calc(100% - 10rem);
     height: calc(100% - 10rem);
-    background-image: url(./Images/bg_img_4.jpg);   
+    background-image: url(./Images/bg_img.jpg);   
     background-size: 125px 125px;
     background-repeat: round;
     background-attachment: fixed;
@@ -52,6 +52,16 @@ body {
     font-size: 1.3rem;
 }
 
+body::-webkit-scrollbar {
+    width: 10px;
+    background-color: darkgrey;
+    
+}
+body::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: gray;
+}
+
 
 .bg {
 }
@@ -75,16 +85,16 @@ body {
 
 /* HERO SECTION */
 .hero_section {
-    margin-top: 15rem;
-    margin-left: 10rem;
+    // margin-top: 15rem;
+    // margin-left: 10rem;
     margin-bottom: 10rem;
 
     h1 {
-        font-size: 6rem;
+        font-size: 8rem;
     }
 
     h2 {
-        font-size: 3rem;
+        font-size: 4rem;
         color: #666;
     }
 }
@@ -218,7 +228,7 @@ body {
         }
 
         .desc_col {
-            flex: 3;
+            flex: 5;
             & h2, & h3, & p {
                 margin-bottom: 10px;
             }
@@ -231,9 +241,10 @@ body {
             .stack_btns button {
                 background-color: #333;
                 border: 0;
-                padding: 5px 10px;
+                padding: 10px 20px;
                 border-radius: 20px;
                 margin-right: 10px;
+                margin-top: 1.5rem;
                 color: #fff;
             }
             button:hover {
@@ -250,7 +261,13 @@ body {
                 top: -1000px;
             }
             .img_main {
+                height: 100%;
                 width: 100%;
+                filter: grayscale(100%);
+                &:hover {
+                    filter: grayscale(0%);
+                }
+                transition: all 0.3s;
             }
         }
     }
@@ -284,7 +301,7 @@ body {
         flex: 2;
         padding: 0px 2rem;
         .social_icons {
-            margin-top: 2rem;
+            margin-top: 5rem;
             & > * {
                 font-size: 2.5rem;
                 margin: 10px;
@@ -306,37 +323,22 @@ body {
             margin: 5px;
             border-radius: 10px;
             border: 1px #aaa solid;
+            font-size: 1rem;
+            font-family: 'Montserrat', sans-serif;
             &:focus {
                 outline: none;
             }
         }
 
         button {
-            // padding: 5px 20px;
-
-            margin: 10px 5px;
-            // border: 2px #ccc solid;
-            // background-color: #fff;            
+            margin: 10px 5px;     
             background-color: #111827;
             border: 1px solid transparent;
-            border-radius: .75rem;
-            box-sizing: border-box;
+            border-radius: 10px;
             color: #FFFFFF;
-            cursor: pointer;
-            flex: 0 0 auto;
-            font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
             font-size: 1.125rem;
-            font-weight: 600;
-            line-height: 1.5rem;
-            padding: .75rem 1.2rem;
-            text-align: center;
-            text-decoration: none #6B7280 solid;
-            text-decoration-thickness: auto;
-            transition-duration: .2s;
-            transition-property: background-color,border-color,color,fill,stroke;
-            transition-timing-function: cubic-bezier(.4, 0, 0.2, 1);
-            user-select: none;
-            touch-action: manipulation;
+            padding: 0.75rem 1.2rem;
+            transition: all 0.2s cubic-bezier(.4, 0, 0.2, 1);
             width: 100%;
             &:hover {
                 background-color: #374151;
@@ -347,15 +349,13 @@ body {
                 outline: 2px solid transparent;
                 outline-offset: 2px;
             }
+            &:disabled {
+                border: 2px solid #aaa;
+                background-color: #bbb;
+                color: #333;
+            }
         }
     }
-}
-
-
-@media (min-width: 768px) {
-  .button-40 {
-    padding: .75rem 1.5rem;
-  }
 }
 
 
@@ -364,4 +364,7 @@ body {
 
 footer {
     font-size: 12px;
+    a {
+        color: #333;
+    }
 }
