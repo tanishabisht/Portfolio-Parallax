@@ -6,17 +6,15 @@ import './App.scss';
 
 // IMPORT IMAGES
 import me from './Images/me.jpg'
+import me2 from './Images/me2.jpg'
 import shape1 from './Images/shape1.png'
-import shape2 from './Images/shape2.png'
 import shape4 from './Images/shape4.png'
-import shape5 from './Images/shape5.png'
 import shape6 from './Images/shape6.png'
-import shape7 from './Images/shape7.png'
 import project1 from './Images/project1.png'
 import project2 from './Images/project2.png'
 
 // EMAIL
-import { useRef, useState, useEffect } from 'react';
+import { useRef, useState } from 'react';
 import emailjs from 'emailjs-com';
 
 // PARALLAX
@@ -86,7 +84,7 @@ function App() {
           <RellaxWrapper speed={2}>
             <img className='img_shape img_shape_1' src={shape1} alt='shape' />
           </RellaxWrapper>
-          <img className='img_main' src={me} alt='my pic' />
+          <img className='img_main' src={me2} alt='my pic' />
         </div>
       </section>
 
@@ -117,18 +115,16 @@ function App() {
         <div className='row row_1'>
             <div className='desc_col'>
               <RellaxWrapper speed={-1}>
-                <h2>PROJECT NAME</h2>
-                <h3>Android Developer</h3>
-                <p>"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molesti</p>
+                <h2 className='proj_name'>UpTodd</h2>
+                <h3 className='proj_designation'>Android Developer</h3>
+                <p className='para'>Built an app for the company which required critical skills such as WorkManager, Kotlin Coroutines, Room and Dependency Injection</p>
                 <div className='stack_btns'>
                   <button>KOTLIN</button>
-                  <button>KOTLIN</button>
+                  <a href='https://play.google.com/store/apps/details?id=com.uptodd.uptoddapp' target="_blank" rel="noreferrer"><button>VIEW ON PLAYSTORE</button></a>
                 </div>
               </RellaxWrapper>
             </div>
           <div className='img_col'>
-            {/* <RellaxWrapper zIndex={-1} speed={-2}><img className='img_shape img_shape_3' src={shape5} alt='shape 3' /></RellaxWrapper> */}
-            {/* <RellaxWrapper zIndex={0} speed={0}><img className='img_main' src={project1} alt='project 1' /></RellaxWrapper> */}
             <img className='img_main' src={project1} alt='project 1' />
           </div>
         </div>
@@ -139,12 +135,12 @@ function App() {
           </div>
           <div className='desc_col'>
             <RellaxWrapper speed={-1}>
-              <h2>PROJECT NAME</h2>
-              <h3>Android Developer</h3>
-              <p>"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molesti</p>
+              <h2 className='proj_name'>ASSIGNMENTS</h2>
+              <h3 className='proj_designation'>Android Developer</h3>
+              <p className='para'>Built an app using Firebase during the 2020 lockdown to help teachers and students to exchange assignments and solutions</p>
               <div className='stack_btns'>
                 <button>KOTLIN</button>
-                <button>KOTLIN</button>
+                <a href='https://play.google.com/store/apps/details?id=my.app.assignments' target="_blank" rel="noreferrer"><button>VIEW ON PLAYSTORE</button></a>
               </div>
             </RellaxWrapper>
           </div>
@@ -157,12 +153,12 @@ function App() {
         <div className='content_col'>
           <RellaxWrapper speed={0} zIndex={0}>
             <h1 className='heading'>GET IN TOUCH</h1>
-            <p>"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molesti</p>
+            <p className='para'>Feel free to connect with me :)</p>
             <div className='social_icons'>
-              <i className="fab fa-facebook-square"></i>
-              <i className="fab fa-youtube-square"></i>
-              <i className="fab fa-instagram"></i>
-              <i className="fab fa-github-square"></i>
+              <a href='https://github.com/JishnuGoyal' target="_blank" rel="noreferrer"><i className="fab fa-github-square"></i></a>
+              <a href='https://github.com/JishnuGoyal' target="_blank" rel="noreferrer"><i class="fab fa-linkedin"></i></a>
+              <a href='https://www.instagram.com/jishnugoyal' target="_blank" rel="noreferrer"><i class="fab fa-instagram-square"></i></a>
+              <a href='https://www.youtube.com/channel/UCT0y1HRWXI9kLpVoyblWtQA' target="_blank" rel="noreferrer"><i className="fab fab fa-youtube-square"></i></a>
             </div>
           </RellaxWrapper>
         </div>

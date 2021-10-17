@@ -29,7 +29,7 @@ body {
 
 /* COMMON */
 .heading {
-    font-size: 2.8rem;
+    font-size: 3rem;
     margin-bottom: 10px;
 }
 .parallax_group {
@@ -110,7 +110,7 @@ body {
             top: -200px;
         }
         .img_main {
-            height: 40rem;
+            height: 30rem;
         }
     }
 }
@@ -151,17 +151,16 @@ body {
     border-radius: 2rem;
     backdrop-filter: blur( 3px );
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-    // background: radial-gradient(closest-side, #e66465, transparent);
-    // border-radius: 20rem;
     .heading {
         margin-bottom: 1.2rem;
+        text-shadow: 2px 2px #aaa;
     }
 }
 @keyframes load{
     from {width: 0%}
 }
 .bar{
-    background-color: #ffffff8f;
+    background-color: #ffffff2a;
     width: 100%;
     padding: 2px;
     border-radius: 15px;
@@ -177,27 +176,28 @@ body {
         padding: 5px 0 5px 10px;
         border-radius: inherit;
         animation: load 2s 0s;
+        font-weight: 400;
     }
 
     &.learning::before{
         width: calc(20% - 10px);
-        background-color: #000;
+        background-color: #1f1f1f;
     }
     &.basic::before{
         width: calc(40% - 10px);
-        background-color: #000;
+        background-color: #1f1f1f;
     }
     &.intermediate::before{
         width: calc(60% - 10px);
-        background-color: #000;
+        background-color: #1f1f1f;
     }
     &.advanced::before{
         width: calc(80% - 10px);
-        background-color: #000;
+        background-color: #1f1f1f;
     }
     &.expert::before{
         width: calc(100% - 10px);
-        background-color: #000;
+        background-color: #1f1f1f;
     }
 }
 
@@ -222,6 +222,12 @@ body {
             & h2, & h3, & p {
                 margin-bottom: 10px;
             }
+            .proj_name {
+                font-size: 2.8rem;
+            }
+            .proj_designation {
+                font-size: 1.5rem;
+            }
             .stack_btns button {
                 background-color: #333;
                 border: 0;
@@ -229,6 +235,9 @@ body {
                 border-radius: 20px;
                 margin-right: 10px;
                 color: #fff;
+            }
+            button:hover {
+                cursor: pointer;
             }
         }
         .img_col {
@@ -252,12 +261,24 @@ body {
 /* GET IN TOUCH SECTION */
 .contact_section {
     display: flex;
-    margin: 15rem 10rem 5rem 10rem;
+    margin: 15rem 0 5rem 0;
+    align-items: center;
 
+    
+    padding: 5rem;
+    background-color: #ccccccd1;
+    border-radius: 2rem;
+    backdrop-filter: blur( 3px );
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+   
+    .heading {
+        text-shadow: 2px 2px #aaa;
+    }
     .img_shape {
         height: 25rem;
         position: absolute;
         left: -100px;
+        top: -200px;
     }
     .content_col {
         flex: 2;
@@ -265,9 +286,9 @@ body {
         .social_icons {
             margin-top: 2rem;
             & > * {
-                font-size: 2rem;
+                font-size: 2.5rem;
                 margin: 10px;
-                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                color: #000;
                 &:hover {
                     color: #333;
                     cursor: pointer;
@@ -278,30 +299,66 @@ body {
     .form_col {
         flex: 3;
         padding: 0px 5rem;
-        background: radial-gradient(closest-side, #e66465, transparent);
-        backdrop-filter: blur( 2px );
-        border-radius: 20rem;
 
         input, textarea {
-            width: 100%;
+            width: 96%;
             padding: 10px;
             margin: 5px;
+            border-radius: 10px;
+            border: 1px #aaa solid;
             &:focus {
                 outline: none;
             }
         }
 
         button {
-            padding: 5px 20px;
+            // padding: 5px 20px;
+
             margin: 10px 5px;
-            border: 2px #ccc solid;
-            background-color: #fff;
+            // border: 2px #ccc solid;
+            // background-color: #fff;            
+            background-color: #111827;
+            border: 1px solid transparent;
+            border-radius: .75rem;
+            box-sizing: border-box;
+            color: #FFFFFF;
+            cursor: pointer;
+            flex: 0 0 auto;
+            font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+            font-size: 1.125rem;
+            font-weight: 600;
+            line-height: 1.5rem;
+            padding: .75rem 1.2rem;
+            text-align: center;
+            text-decoration: none #6B7280 solid;
+            text-decoration-thickness: auto;
+            transition-duration: .2s;
+            transition-property: background-color,border-color,color,fill,stroke;
+            transition-timing-function: cubic-bezier(.4, 0, 0.2, 1);
+            user-select: none;
+            touch-action: manipulation;
+            width: 100%;
             &:hover {
+                background-color: #374151;
                 cursor: pointer;
+            }
+            &:focus {
+                box-shadow: none;
+                outline: 2px solid transparent;
+                outline-offset: 2px;
             }
         }
     }
 }
+
+
+@media (min-width: 768px) {
+  .button-40 {
+    padding: .75rem 1.5rem;
+  }
+}
+
+
 
 
 
