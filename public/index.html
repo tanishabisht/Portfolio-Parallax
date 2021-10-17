@@ -30,5 +30,22 @@
       shape_3.style.transform = `translate(${mouse_x_position}px, ${mouse_y_position + 100}px) rotate(-20deg)`;
       shape_4.style.transform = `translate(${mouse_x_position}px, ${mouse_y_position + 300}px)`;
     })
+
+
+
+    var scroll_position = 0;
+    var section_position = 1000;
+    const bars = document.querySelector('.bar');
+
+    function startAnimation() {
+      element.classList.add("run-animation");
+    }
+
+    window.addEventListener('scroll', function(e) {
+      scroll_position = window.scrollY;
+      if (scroll_position > section_position) {
+        // Start the animation -> startAnimation()
+      }
+    });
   </script>
 </html>

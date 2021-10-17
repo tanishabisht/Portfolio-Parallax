@@ -11,20 +11,25 @@ body {
     margin: 5rem;
     width: calc(100% - 10rem);
     height: calc(100% - 10rem);
-    background-image: url(./Images/bg_img_1.jpg);
-    background-size: 150px 150px;
+    background-image: url(./Images/bg_img_4.jpg);   
+    background-size: 125px 125px;
     background-repeat: round;
     background-attachment: fixed;
     overflow-x: hidden;
     overflow-y: auto;
     perspective: 300px;
+    // background-image: url(./Images/bg.jpg);
+
+    // background-repeat: no-repeat;
+    // background-attachment: fixed;
+    // background-size: contain;
 }
 
 
 
 /* COMMON */
 .heading {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     margin-bottom: 10px;
 }
 .parallax_group {
@@ -43,8 +48,29 @@ body {
 }
 .para {
     margin-bottom: 10px;
-    line-height: 1.5rem;
+    // line-height: 1.5rem;
+    font-size: 1.3rem;
 }
+
+
+.bg {
+}
+/* MENU */
+.menu {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    right: 10rem;
+    top: -10rem;
+    background-color: rgba(0, 128, 0, 0.329);
+    text-align: right;
+
+    .another {
+        // background-color: tomato;
+        width: 20rem;
+    }
+}
+
 
 
 /* HERO SECTION */
@@ -99,10 +125,10 @@ body {
     align-items: center;
     justify-content: center;
     .img_shape {    
-        height: 25rem;
+        height: 15rem;
         position: relative;
-        right: 20rem;
-        top: 500px;
+        right: 15rem;
+        top: 350px;
     }
     .video {
         margin-bottom: 1rem;
@@ -121,16 +147,22 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     padding: 5rem;
-    background: radial-gradient(closest-side, #e66465, transparent);
-    backdrop-filter: blur( 2px );
-    border-radius: 20rem;
+    background-color: #000000d1;
+    border-radius: 2rem;
+    backdrop-filter: blur( 10px );
+    // background: radial-gradient(closest-side, #e66465, transparent);
+    // border-radius: 20rem;
+    .heading {
+        color: #fff;
+        margin-bottom: 1.2rem;
+    }
 }
 @keyframes load{
     from {width: 0%}
 }
 .bar{
-    border: 1px solid #ccc;
-    background-color: #fff;
+    border: 1px solid #000;
+    background-color: #000;
     width: 100%;
     padding: 2px;
     border-radius: 15px;
@@ -148,30 +180,25 @@ body {
         animation: load 2s 0s;
     }
 
-    &.front::before{
-        background-color: #ffcc33;
-    }
-    &.mid::before{
-        background-color: #a6cfe3;
-    }
-    &.back::before{
-        background-color: #f3b0ff;
-    }
-
     &.learning::before{
         width: calc(20% - 10px);
+        background-color: #E0AAFF;
     }
     &.basic::before{
         width: calc(40% - 10px);
+        background-color: #814deb;
     }
     &.intermediate::before{
         width: calc(60% - 10px);
+        background-color: #7646d6;
     }
     &.advanced::before{
         width: calc(80% - 10px);
+        background-color: #693fbd;
     }
     &.expert::before{
         width: calc(100% - 10px);
+        background-color: #3b2072;
     }
 }
 

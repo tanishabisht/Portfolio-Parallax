@@ -10,6 +10,8 @@ import shape1 from './Images/shape1.png'
 import shape2 from './Images/shape2.png'
 import shape4 from './Images/shape4.png'
 import shape5 from './Images/shape5.png'
+import shape6 from './Images/shape6.png'
+import shape7 from './Images/shape7.png'
 import project1 from './Images/project1.png'
 import project2 from './Images/project2.png'
 
@@ -54,6 +56,17 @@ function App() {
     <div className='bg'>
 
 
+      {/* <div className='menu'>
+        <div className='another'>
+          <span className='item'>ABOUT</span>
+          <span className='item'>UTUBE</span>
+          <span className='item'>SKILLS</span>
+          <span className='item'>PROJECTS</span>
+          <span className='item'>GET IN TOUCH</span>          
+        </div>
+      </div> */}
+
+
       <section className="hero_section">
         <h1>JISHNU GOYAL</h1>
         <h2>ANDROID DEVELOPER</h2>
@@ -80,7 +93,7 @@ function App() {
 
 
       <section className='youtube_section'>
-        <RellaxWrapper speed={2.2}><img className='img_shape img_shape_2' src={shape2} alt='shape' /></RellaxWrapper>        
+        <RellaxWrapper speed={2.2}><img className='img_shape img_shape_2' src={shape6} alt='shape' /></RellaxWrapper>        
         <ReactPlayer className='video' light url="https://youtu.be/7kh3Pog6pyw" />
         <p className='para'>With a passion for well-crafte n Catteeuw, a multidisciplinary designer  n Catteeuw, a multidisciplinary designer & art director based in Belgium. With a passion for well-crafted (digital) experi</p>
       </section>
@@ -89,11 +102,11 @@ function App() {
 
       <section className="skills_section">
         <h1 className='heading'>SKILLS</h1>
-        <div className="bar back learning" data-skill="Kotlin"></div>
-        <div className="bar mid basic" data-skill="Android Studio"></div>
-        <div className="bar mid intermediate" data-skill="Git GitHub"></div>
-        <div className="bar front advanced" data-skill="CSS3"></div>
-        <div className="bar front expert" data-skill="HTML5"></div>
+        <div className="bar expert" data-skill="Kotlin"></div>
+        <div className="bar advanced" data-skill="Android Studio"></div>
+        <div className="bar intermediate" data-skill="Git GitHub"></div>
+        <div className="bar basic" data-skill="Firebase"></div>
+        <div className="bar learning" data-skill="Firebase"></div>
       </section>
 
 
@@ -114,8 +127,9 @@ function App() {
               </RellaxWrapper>
             </div>
           <div className='img_col'>
-            <RellaxWrapper zIndex={-1} speed={-2}><img className='img_shape img_shape_3' src={shape5} alt='shape 3' /></RellaxWrapper>
-            <RellaxWrapper zIndex={0} speed={0}><img className='img_main' src={project1} alt='project 1' /></RellaxWrapper>
+            {/* <RellaxWrapper zIndex={-1} speed={-2}><img className='img_shape img_shape_3' src={shape5} alt='shape 3' /></RellaxWrapper> */}
+            {/* <RellaxWrapper zIndex={0} speed={0}><img className='img_main' src={project1} alt='project 1' /></RellaxWrapper> */}
+            <img className='img_main' src={project1} alt='project 1' />
           </div>
         </div>
 
