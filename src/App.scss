@@ -147,13 +147,13 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     padding: 5rem;
-    background-color: #000000d1;
+    background-color: #ccccccd1;
     border-radius: 2rem;
-    backdrop-filter: blur( 10px );
+    backdrop-filter: blur( 3px );
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     // background: radial-gradient(closest-side, #e66465, transparent);
     // border-radius: 20rem;
     .heading {
-        color: #fff;
         margin-bottom: 1.2rem;
     }
 }
@@ -161,8 +161,7 @@ body {
     from {width: 0%}
 }
 .bar{
-    border: 1px solid #000;
-    background-color: #000;
+    background-color: #ffffff8f;
     width: 100%;
     padding: 2px;
     border-radius: 15px;
@@ -182,23 +181,23 @@ body {
 
     &.learning::before{
         width: calc(20% - 10px);
-        background-color: #E0AAFF;
+        background-color: #000;
     }
     &.basic::before{
         width: calc(40% - 10px);
-        background-color: #814deb;
+        background-color: #000;
     }
     &.intermediate::before{
         width: calc(60% - 10px);
-        background-color: #7646d6;
+        background-color: #000;
     }
     &.advanced::before{
         width: calc(80% - 10px);
-        background-color: #693fbd;
+        background-color: #000;
     }
     &.expert::before{
         width: calc(100% - 10px);
-        background-color: #3b2072;
+        background-color: #000;
     }
 }
 
