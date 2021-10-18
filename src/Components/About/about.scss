@@ -1,0 +1,22 @@
+.aboutme_section {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 5rem;
+    .content_col {
+        flex: 5;
+        margin: 1rem;
+    }
+    .image_col {
+        flex: 3;
+        margin: 1rem;
+        .img_shape {
+            height: 15rem;
+            position: absolute;
+            top: -200px;
+        }
+        .img_main {
+            height: 30rem;
+        }
+    }
+}

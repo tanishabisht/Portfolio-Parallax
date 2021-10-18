@@ -1,0 +1,79 @@
+/* SKILLS SECTION */
+.skills_section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 5rem;
+    background-color: #ccccccd1;
+    border-radius: 2rem;
+    backdrop-filter: blur( 3px );
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    .heading {
+        margin-bottom: 1.2rem;
+        text-shadow: 2px 2px #aaa;
+    }
+
+    position: relative;
+    z-index: 1000;
+    .img_shape {
+        position: absolute;
+        &.dimond_img_1 {
+            top: 250px;
+            right: 80px;
+            height: 10rem;
+            width: 10rem;
+            z-index: -1;
+        }
+        &.dimond_img_2 {
+            bottom: -800px;
+            left: 80px;
+            height: 20rem;
+            width: 20rem;
+            transform: rotate(20deg);
+        }
+    }
+}
+@keyframes load{
+    from {width: 0%}
+}
+.bar{
+    background-color: #ffffff2a;
+    width: 100%;
+    padding: 2px;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+    font-size: 14px;
+    color: #FFF;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+
+    &::before{
+        content:  attr(data-skill);
+        display: inline-block;
+        padding: 5px 0 5px 10px;
+        border-radius: inherit;
+        animation: load 2s 0s;
+        font-weight: 400;
+    }
+
+    &.learning::before{
+        width: calc(20% - 10px);
+        background-color: #1f1f1f;
+    }
+    &.basic::before{
+        width: calc(40% - 10px);
+        background-color: #1f1f1f;
+    }
+    &.intermediate::before{
+        width: calc(60% - 10px);
+        background-color: #1f1f1f;
+    }
+    &.advanced::before{
+        width: calc(80% - 10px);
+        background-color: #1f1f1f;
+    }
+    &.expert::before{
+        width: calc(100% - 10px);
+        background-color: #1f1f1f;
+    }
+}

@@ -1,0 +1,82 @@
+/* GET IN TOUCH SECTION */
+.contact_section {
+    display: flex;
+    margin: 15rem 0 5rem 0;
+    align-items: center;
+
+    
+    padding: 5rem;
+    background-color: #ccccccd1;
+    border-radius: 2rem;
+    backdrop-filter: blur( 3px );
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+   
+    .heading {
+        text-shadow: 2px 2px #aaa;
+    }
+    .img_shape {
+        height: 25rem;
+        position: absolute;
+        left: -100px;
+        top: -200px;
+    }
+    .content_col {
+        flex: 2;
+        padding: 0px 2rem;
+        .social_icons {
+            margin-top: 5rem;
+            & > * {
+                font-size: 2.5rem;
+                margin: 10px;
+                color: #000;
+                &:hover {
+                    color: #333;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .form_col {
+        flex: 3;
+        padding: 0px 5rem;
+
+        input, textarea {
+            width: 96%;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 10px;
+            border: 1px #aaa solid;
+            font-size: 1rem;
+            font-family: 'Montserrat', sans-serif;
+            &:focus {
+                outline: none;
+            }
+        }
+
+        button {
+            margin: 10px 5px;     
+            background-color: #111827;
+            border: 1px solid transparent;
+            border-radius: 10px;
+            color: #FFFFFF;
+            font-size: 1.125rem;
+            padding: 0.75rem 1.2rem;
+            transition: all 0.2s cubic-bezier(.4, 0, 0.2, 1);
+            width: 100%;
+            &:hover {
+                background-color: #374151;
+                cursor: pointer;
+            }
+            &:focus {
+                box-shadow: none;
+                outline: 2px solid transparent;
+                outline-offset: 2px;
+            }
+            &:disabled {
+                border: 2px solid #aaa;
+                background-color: #bbb;
+                color: #333;
+            }
+        }
+    }
+}
