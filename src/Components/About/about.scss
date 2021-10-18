@@ -1,3 +1,7 @@
+@import '/src/globas.scss';
+
+
+
 .aboutme_section {
     display: flex;
     align-items: center;
@@ -17,6 +21,21 @@
         }
         .img_main {
             height: 30rem;
+            @media (max-width:$m) {
+                height: 25rem;
+            }
         }
+    }
+    @media (max-width:$xs) {
+        flex-direction: column-reverse;
+    }
+    @media (max-width:$xl) {
+        padding: 0;
+    }
+    @media (max-width:$l) {
+    }
+    @media (max-width:$m) {
+    }
+    @media (max-width:$s) {
     }
 }

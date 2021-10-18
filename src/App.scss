@@ -1,12 +1,5 @@
-$breakpoint-phone: 320px;
-$breakpoint-iPads: 480px;
-$breakpoint-small: 768px;
-$breakpoint-large: 1024px;
-$breakpoint-tv: 1200px;
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
-@import "/src/breakpoints.scss";
-
+@import '/src/globas.scss';
 
 
 // removing default styling
@@ -30,6 +23,16 @@ body {
     overflow-x: hidden;
     overflow-y: auto;
     perspective: 300px;
+    @media (max-width:$s) {
+        margin: 3rem;
+        width: calc(100% - 6rem);
+        height: calc(100% - 6rem);
+    }
+    @media (max-width:$xs) {
+        margin: 1rem;
+        width: calc(100% - 2rem);
+        height: calc(100% - 2rem);
+    }
 }
 
 
@@ -55,8 +58,17 @@ body::-webkit-scrollbar-thumb {
 .heading {
     font-size: 3rem;
     margin-bottom: 10px;
+    @media (max-width:$s) {
+        font-size: 2.5rem;
+    }
 }
 .para {
     margin-bottom: 10px;
     font-size: 1.3rem;
+    @media (max-width:$m) {
+        font-size: 1.2rem;
+    }
+    @media (max-width:$s) {
+        font-size: 1rem;
+    }
 }
