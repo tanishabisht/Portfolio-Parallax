@@ -40,14 +40,11 @@
             }
         }
         &.dimond_img_2 {
-            bottom: -750px;
-            left: 80px;
+            bottom: -800px;
+            right: -100px;
             height: 20rem;
             width: 20rem;
             transform: rotate(30deg);
-            @media (max-width:$m) {
-                bottom: -700px;
-            }
             @media (max-width:$s) {
                 height: 15rem;
                 width: 15rem;

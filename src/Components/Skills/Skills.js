@@ -14,8 +14,7 @@ const About = () => {
     {name:'Kotlin', level:'expert'},
     {name:'Android Studio', level:'advanced'},
     {name:'Git GitHub', level:'intermediate'},
-    {name:'Firebase', level:'basic'},
-    {name:'Video Editing', level:'learning'}
+    {name:'Firebase', level:'basic'}
   ]
 
   return (

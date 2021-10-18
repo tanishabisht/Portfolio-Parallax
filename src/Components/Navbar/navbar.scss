@@ -1,8 +1,20 @@
+@import '/src/globas.scss';
+
+
+
 .menu {
     position: absolute;
     top: -4rem;
     right: -4rem;
     text-align: right;
+
+    @media (max-width:$s) {
+        top: -5rem;
+        right: -3rem;
+    }
+    @media (max-width:$xs) {
+        display: none;
+    }
 
     .item-wrapper{
         position:relative;
@@ -51,20 +63,9 @@
             font-weight: 500;
             color: #333;
             text-decoration: none;
-
-            // @include media('>=LGdesktop') {}
-            // @include media('>=desktop', '<LGdesktop') {
-            //     margin: 10px;
-            // }
-            // @include media('>=tablet', '<desktop') {
-            //     margin: 10px;
-            // }
-            // @include media('>=phone', '<tablet') {
-            //     margin: 5px;
-            // }
-            // @include media('<phone') {
-            //     margin: 10px;
-            // }
+            @media (max-width:$s) {
+                margin: 15px;
+            }
         }
     }
     

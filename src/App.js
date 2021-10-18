@@ -1,6 +1,4 @@
-import { 
-  // Navbar, 
-  Hero, About, Youtube, Skills, Projects, Contact, Footer } from './Components'
+import { Navbar, Hero, About, Youtube, Skills, Projects, Contact, Footer } from './Components'
 import './App.scss';
 
 
@@ -8,7 +6,7 @@ import './App.scss';
 function App() {
   return (
     <div className='bg'>
-      {/* <Navbar /> */}
+      <Navbar />
       <Hero />
       <About />
       <Youtube />

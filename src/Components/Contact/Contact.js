@@ -27,10 +27,14 @@ const About = () => {
 
     const form = useRef();
 
+    const service_id = 'service_5cvz05d'
+    const template_id = 'template_lvc7sxv'
+    const user_id = 'user_nAvZsultEnCIpovi1phHY'
+
 
     const sendEmail = (e) => {
       e.preventDefault()
-      emailjs.sendForm('service_806ruid', 'template_uw50gqm', form.current, 'user_lkwuhptAYqFFFhgOEij13')
+      emailjs.sendForm(service_id, template_id, form.current, user_id)
         .then(
           () => toast.success('Email Sent Successfully!', {theme: "dark"}), 
           () => toast.error('Uh Oh! Some error occured', {theme: "dark"})
@@ -53,7 +57,7 @@ const About = () => {
             </div>
             <div className='social_icons'>
               <a href='https://github.com/JishnuGoyal' target="_blank" rel="noreferrer"><i className="fab fa-github-square"></i></a>
-              <a href='https://github.com/JishnuGoyal' target="_blank" rel="noreferrer"><i className="fab fa-linkedin"></i></a>
+              <a href='https://www.linkedin.com/in/jishnu-goyal-4333521b3/' target="_blank" rel="noreferrer"><i className="fab fa-linkedin"></i></a>
               <a href='https://www.instagram.com/jishnugoyal' target="_blank" rel="noreferrer"><i className="fab fa-instagram-square"></i></a>
               <a href='https://www.youtube.com/channel/UCT0y1HRWXI9kLpVoyblWtQA' target="_blank" rel="noreferrer"><i className="fab fab fa-youtube-square"></i></a>
             </div>
