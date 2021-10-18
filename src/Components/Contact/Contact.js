@@ -47,8 +47,10 @@ const About = () => {
         <RellaxWrapper speed={0.5} zIndex={-1}><img className='img_shape img_shape_4' src={shape2} alt='shape 3' /></RellaxWrapper>
         <div className='content_col'>
           <RellaxWrapper speed={0} zIndex={0}>
-            <h1 className='heading'>GET IN TOUCH</h1>
-            <p className='para'>Feel free to connect with me :`)`</p>
+            <div>
+              <h1 className='heading'>GET IN TOUCH</h1>
+              <p className='para'>Feel free to connect with me :)</p>
+            </div>
             <div className='social_icons'>
               <a href='https://github.com/JishnuGoyal' target="_blank" rel="noreferrer"><i className="fab fa-github-square"></i></a>
               <a href='https://github.com/JishnuGoyal' target="_blank" rel="noreferrer"><i className="fab fa-linkedin"></i></a>

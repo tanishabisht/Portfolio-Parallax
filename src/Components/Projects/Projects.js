@@ -16,7 +16,7 @@ const About = () => {
 
         <div className='row row_1'>
             <div className='desc_col'>
-              <RellaxWrapper speed={-1}>
+              <RellaxWrapper speed={-0.5} tablet={0.3} mobile={0.3} xs={0.3} >
                 <RellaxWrapper speed={-0.2}><h2 className='proj_name proj_name_1'>UpTodd</h2></RellaxWrapper>
                 <h3 className='proj_designation'>Android Developer</h3>
                 <p className='para'>Built an app for the company which required critical skills such as WorkManager, Kotlin Coroutines, Room and Dependency Injection</p>
@@ -36,7 +36,7 @@ const About = () => {
             <img className='img_main' src={project2} alt='project 1' />
           </div>
           <div className='desc_col'>
-            <RellaxWrapper speed={-0.8}>
+            <RellaxWrapper speed={-0.8} tablet={0.2} mobile={0.2} xs={0.2}>
               <RellaxWrapper speed={-0.2}><h2 className='proj_name proj_name_2'>Assignment</h2></RellaxWrapper>
               <h3 className='proj_designation'>Android Developer</h3>
               <p className='para'>Built an app using Firebase during the 2020 lockdown to help teachers and students to exchange assignments and solutions</p>

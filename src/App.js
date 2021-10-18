@@ -1,8 +1,6 @@
 import { 
   // Navbar, 
-  Hero, About, Youtube, Skills, 
-  // Projects, Contact, 
-  Footer } from './Components'
+  Hero, About, Youtube, Skills, Projects, Contact, Footer } from './Components'
 import './App.scss';
 
 
@@ -15,8 +13,8 @@ function App() {
       <About />
       <Youtube />
       <Skills />
-      {/* <Projects /> */}
-      {/* <Contact /> */}
+      <Projects />
+      <Contact />
       <Footer/>
     </div>
   );
