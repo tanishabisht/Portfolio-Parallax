@@ -19,13 +19,13 @@
   <script>    
     const container = document.querySelector('.bg');
     const shape_1 = document.querySelector('.img_shape_1');
-    // const shape_2 = document.querySelector('.img_shape_2');
+    const shape_2 = document.querySelector('.img_shape_2');
     // const shape_4 = document.querySelector('.img_shape_4');
     container.addEventListener('mousemove', (e) => {
       const mouse_x_position = e.pageX * -1 / 20;
       const mouse_y_position = e.pageY * -1 / 20;
       shape_1.style.transform = `translate(${mouse_x_position}px, ${mouse_y_position + 100}px)`;
-      // shape_2.style.transform = `translate(${mouse_x_position}px, ${mouse_y_position + 100}px)`;
+      shape_2.style.transform = `translate(${mouse_x_position}px, ${mouse_y_position + 100}px)`;
       // shape_3.style.transform = `translate(${mouse_x_position}px, ${mouse_y_position + 100}px) rotate(-20deg)`;
       // shape_4.style.transform = `translate(${mouse_x_position}px, ${mouse_y_position + 300}px)`;
     })

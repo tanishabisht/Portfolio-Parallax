@@ -1,5 +1,9 @@
-/* SKILLS SECTION */
+@import '/src/globas.scss';
+
+
+
 .skills_section{
+    margin: 5rem 0;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -22,15 +26,45 @@
             right: 80px;
             height: 10rem;
             width: 10rem;
-            z-index: -1;
+            @media (max-width:$m) {
+                top: 250px;
+                right: 80px;
+            }
+            @media (max-width:$s) {
+                height: 8rem;
+                width: 8rem;
+                right: 10px;
+            }
+            @media (max-width:$xs) {
+                display: none;
+            }
         }
         &.dimond_img_2 {
-            bottom: -800px;
+            bottom: -750px;
             left: 80px;
             height: 20rem;
             width: 20rem;
-            transform: rotate(20deg);
+            transform: rotate(30deg);
+            @media (max-width:$m) {
+                bottom: -700px;
+            }
+            @media (max-width:$s) {
+                height: 15rem;
+                width: 15rem;
+                bottom: -600px;
+            }
+            @media (max-width:$xs) {
+                display: none;
+            }
         }
+    }
+
+    
+    @media (max-width:$m) {
+        padding: 4rem;
+    }
+    @media (max-width:$s) {
+        padding: 3rem;
     }
 }
 @keyframes load{
@@ -54,26 +88,22 @@
         border-radius: inherit;
         animation: load 2s 0s;
         font-weight: 400;
+        background-color: #1f1f1f;
     }
 
     &.learning::before{
         width: calc(20% - 10px);
-        background-color: #1f1f1f;
     }
     &.basic::before{
         width: calc(40% - 10px);
-        background-color: #1f1f1f;
     }
     &.intermediate::before{
         width: calc(60% - 10px);
-        background-color: #1f1f1f;
     }
     &.advanced::before{
         width: calc(80% - 10px);
-        background-color: #1f1f1f;
     }
     &.expert::before{
         width: calc(100% - 10px);
-        background-color: #1f1f1f;
     }
 }

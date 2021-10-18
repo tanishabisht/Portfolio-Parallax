@@ -1,21 +1,40 @@
-/* YOUTUBE SECTION */
+@import '/src/globas.scss';
+
+
 .youtube_section {
-    margin-bottom: 15rem;
+    margin: 10rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     .img_shape {    
         height: 15rem;
-        position: relative;
-        right: 15rem;
-        top: 350px;
+        position: absolute;
+        top: 7rem;
+        right: 7rem;
+        @media (max-width:$xs) {
+            height: 13rem;
+            top: 10rem;
+            right: 5rem;
+            // right: 7rem;
+        }
     }
     .video {
         margin-bottom: 1rem;
         box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        width: 640px !important;
+        height: 360px !important;
+        @media (max-width:$xs) {
+            width: 100% !important;
+        }
     }
     .para {
         width: 40rem;
+        @media (max-width:$xs) {
+            width: 100%;
+        }
+    }
+    @media (max-width:$xs) {
+        margin: 1rem 0;
     }
 }
