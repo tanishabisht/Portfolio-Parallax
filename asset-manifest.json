@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Jishnu-Portfolio/static/css/main.c34c2c11.chunk.css",
+    "main.css": "/Jishnu-Portfolio/static/css/main.5712aeae.chunk.css",
     "main.js": "/Jishnu-Portfolio/static/js/main.a40c6260.chunk.js",
     "main.js.map": "/Jishnu-Portfolio/static/js/main.a40c6260.chunk.js.map",
     "runtime-main.js": "/Jishnu-Portfolio/static/js/runtime-main.026defb5.js",
@@ -10,7 +10,7 @@
     "static/js/2.c1878b47.chunk.js.map": "/Jishnu-Portfolio/static/js/2.c1878b47.chunk.js.map",
     "index.html": "/Jishnu-Portfolio/index.html",
     "static/css/2.f4c56af9.chunk.css.map": "/Jishnu-Portfolio/static/css/2.f4c56af9.chunk.css.map",
-    "static/css/main.c34c2c11.chunk.css.map": "/Jishnu-Portfolio/static/css/main.c34c2c11.chunk.css.map",
+    "static/css/main.5712aeae.chunk.css.map": "/Jishnu-Portfolio/static/css/main.5712aeae.chunk.css.map",
     "static/js/2.c1878b47.chunk.js.LICENSE.txt": "/Jishnu-Portfolio/static/js/2.c1878b47.chunk.js.LICENSE.txt",
     "static/media/aboutShape.332c58f3.png": "/Jishnu-Portfolio/static/media/aboutShape.332c58f3.png",
     "static/media/me.091bcb0a.jpg": "/Jishnu-Portfolio/static/media/me.091bcb0a.jpg",
@@ -24,7 +24,7 @@
     "static/js/runtime-main.026defb5.js",
     "static/css/2.f4c56af9.chunk.css",
     "static/js/2.c1878b47.chunk.js",
-    "static/css/main.c34c2c11.chunk.css",
+    "static/css/main.5712aeae.chunk.css",
     "static/js/main.a40c6260.chunk.js"
   ]
 }
