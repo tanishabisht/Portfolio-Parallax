@@ -9,6 +9,7 @@ import me from './Images/me.jpg'
 import shape1 from './Images/shape1.png'
 import shape2 from './Images/shape2.png'
 import shape3 from './Images/shape3.png'
+import shape4 from './Images/shape4.png'
 import project1 from './Images/project1.png'
 import project2 from './Images/project2.png'
 
@@ -25,6 +26,9 @@ import 'react-toastify/dist/ReactToastify.css';
 
 // CUSTOM COMPONENTS
 import { Footer } from './Components'
+
+// DEPENDENCIES
+import { Link } from 'react-scroll'
 
 
 function App() {
@@ -56,15 +60,13 @@ function App() {
     <div className='bg'>
 
 
-      {/* <div className='menu'>
-        <div className='another'>
-          <span className='item'>ABOUT</span>
-          <span className='item'>UTUBE</span>
-          <span className='item'>SKILLS</span>
-          <span className='item'>PROJECTS</span>
-          <span className='item'>GET IN TOUCH</span>          
-        </div>
-      </div> */}
+        <section className='menu'>
+          <span className='item-wrapper'><Link smooth={true} duration={1000} to='aboutme' className='item'>ABOUT</Link></span>
+          <span className='item-wrapper'><Link smooth={true} duration={1000} to='youtube' className='item'>UTUBE</Link></span>
+          <span className='item-wrapper'><Link smooth={true} duration={1000} to='skills' className='item'>SKILLS</Link></span>
+          <span className='item-wrapper'><Link smooth={true} duration={1000} to='project' className='item'>PROJECTS</Link></span>
+          <span className='item-wrapper'><Link smooth={true} duration={1000} to='contact' className='item'>GET IN TOUCH</Link></span>
+        </section>
 
 
       <section className="hero_section">
@@ -74,7 +76,7 @@ function App() {
 
 
 
-      <section className='aboutme_section'>
+      <section id='aboutme' className='aboutme_section'>
         <RellaxWrapper speed={-2}>
           <div className='content_col'>
             <h1 className='heading'>ABOUT ME</h1>
@@ -92,7 +94,7 @@ function App() {
 
 
 
-      <section className='youtube_section'>
+      <section id='youtube' className='youtube_section'>
         <RellaxWrapper speed={2.2}><img className='img_shape img_shape_2' src={shape3} alt='shape' /></RellaxWrapper>        
         <ReactPlayer className='video' light url="https://www.youtube.com/watch?v=vgU4cB26_BU" />
         <p className='para'>I share my knowledge on my YouTube Channel where I teach Android and Ktor</p>
@@ -100,24 +102,27 @@ function App() {
 
 
 
-      <section className="skills_section">
+      <section id='skills' className="skills_section">
+        <RellaxWrapper speed={2}><img className='img_shape dimond_img_1' src={shape4} alt='shape 1 dimond' /></RellaxWrapper>
         <h1 className='heading'>SKILLS</h1>
         <div className="bar expert" data-skill="Kotlin"></div>
         <div className="bar advanced" data-skill="Android Studio"></div>
         <div className="bar intermediate" data-skill="Git GitHub"></div>
         <div className="bar basic" data-skill="Firebase"></div>
         <div className="bar learning" data-skill="Firebase"></div>
+        <RellaxWrapper speed={2}><img className='img_shape dimond_img_2' src={shape4} alt='shape 1 dimond' /></RellaxWrapper>
       </section>
+      
 
 
 
-      <section className="project_section">
+      <section id='project' className="project_section">
         <h1 className='heading'>PROJECTS</h1>
 
         <div className='row row_1'>
             <div className='desc_col'>
               <RellaxWrapper speed={-1}>
-                <h2 className='proj_name'>UpTodd</h2>
+                <RellaxWrapper speed={-0.2}><h2 className='proj_name proj_name_1'>UpTodd</h2></RellaxWrapper>
                 <h3 className='proj_designation'>Android Developer</h3>
                 <p className='para'>Built an app for the company which required critical skills such as WorkManager, Kotlin Coroutines, Room and Dependency Injection</p>
                 <div className='stack_btns'>
@@ -133,16 +138,16 @@ function App() {
 
         <div className='row row_2'>
           <div className='img_col'>
-            <img className='img_main' src={project2} alt='project 2' />
+            <img className='img_main' src={project2} alt='project 1' />
           </div>
           <div className='desc_col'>
-            <RellaxWrapper speed={-1}>
-              <h2 className='proj_name'>ASSIGNMENTS</h2>
+            <RellaxWrapper speed={-0.8}>
+              <RellaxWrapper speed={-0.2}><h2 className='proj_name proj_name_2'>Assignment</h2></RellaxWrapper>
               <h3 className='proj_designation'>Android Developer</h3>
               <p className='para'>Built an app using Firebase during the 2020 lockdown to help teachers and students to exchange assignments and solutions</p>
               <div className='stack_btns'>
                 <button>KOTLIN</button>
-                <a href='https://play.google.com/store/apps/details?id=my.app.assignments' target="_blank" rel="noreferrer"><button>VIEW ON PLAYSTORE</button></a>
+                <a href='https://play.google.com/store/apps/details?id=com.uptodd.uptoddapp' target="_blank" rel="noreferrer"><button>VIEW ON PLAYSTORE</button></a>
               </div>
             </RellaxWrapper>
           </div>
@@ -150,7 +155,7 @@ function App() {
       </section>
 
 
-      <section className='contact_section'>
+      <section id='contact' className='contact_section'>
         <RellaxWrapper speed={0.5} zIndex={-1}><img className='img_shape img_shape_4' src={shape2} alt='shape 3' /></RellaxWrapper>
         <div className='content_col'>
           <RellaxWrapper speed={0} zIndex={0}>
