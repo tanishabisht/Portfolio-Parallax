@@ -87,7 +87,8 @@
                 top: -1000px;
             }
             .img_main {
-                width: 100%;
+                width: auto;
+                height: 45rem;
                 filter: grayscale(100%);
                 @media (max-width:$s) {
                     height: 30rem;

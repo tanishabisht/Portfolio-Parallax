@@ -1,6 +1,5 @@
-import me from '../Images/me.jpg'
-import project1 from '../Images/project1.png'
-import project2 from '../Images/project2.png'
+import me from '../Images/me.png'
+import project from '../Images/mockup.png'
 
 export const menuItems = [
     {section:'#aboutme', text:'ABOUT'},
@@ -32,9 +31,9 @@ export const allSkills = [
 ]
 
 export const allProjects = [
-    {name: "ProjectName1", role: "Android Developer", image: project1, desc: "Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labore et dolore magna aliqua.", skillsArr: ["KOTLIN"], links: [{text: "VIEW ON PLAYSTORE", href: "https://play.google.com/store/apps/details?id=com.uptodd.uptoddapp"}]},
-    {name: "ProjectName2", role: "Android Developer", image: project2, desc: "Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labore et dolore magna aliqua.", skillsArr: ["KOTLIN"], links: [{text: "VIEW ON PLAYSTORE", href: "https://play.google.com/store/apps/details?id=com.uptodd.uptoddapp"}]},
-    {name: "ProjectName3", role: "Android Developer", image: project1, desc: "Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labore et dolore magna aliqua.", skillsArr: ["KOTLIN"], links: [{text: "VIEW ON PLAYSTORE", href: "https://play.google.com/store/apps/details?id=com.uptodd.uptoddapp"}]},
+    {name: "ProjectName1", role: "Android Developer", image: project, desc: "Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labore et dolore magna aliqua.", skillsArr: ["KOTLIN"], links: [{text: "VIEW ON PLAYSTORE", href: "https://play.google.com/store/apps/details?id=com.uptodd.uptoddapp"}]},
+    {name: "ProjectName2", role: "Android Developer", image: project, desc: "Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labore et dolore magna aliqua.", skillsArr: ["KOTLIN"], links: [{text: "VIEW ON PLAYSTORE", href: "https://play.google.com/store/apps/details?id=com.uptodd.uptoddapp"}]},
+    {name: "ProjectName3", role: "Android Developer", image: project, desc: "Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labore et dolore magna aliqua.", skillsArr: ["KOTLIN"], links: [{text: "VIEW ON PLAYSTORE", href: "https://play.google.com/store/apps/details?id=com.uptodd.uptoddapp"}]},
 ]
 
 export const instaLink = "https://www.instagram.com/photonmadnesss/"
