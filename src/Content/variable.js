@@ -31,9 +31,9 @@ export const allSkills = [
 ]
 
 export const allProjects = [
-    {name: "ProjectName1", role: "Android Developer", image: project, desc: "Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labore et dolore magna aliqua.", skillsArr: ["KOTLIN"], links: [{text: "VIEW ON PLAYSTORE", href: "https://play.google.com/store/apps/details?id=com.uptodd.uptoddapp"}]},
-    {name: "ProjectName2", role: "Android Developer", image: project, desc: "Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labore et dolore magna aliqua.", skillsArr: ["KOTLIN"], links: [{text: "VIEW ON PLAYSTORE", href: "https://play.google.com/store/apps/details?id=com.uptodd.uptoddapp"}]},
-    {name: "ProjectName3", role: "Android Developer", image: project, desc: "Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labore et dolore magna aliqua.", skillsArr: ["KOTLIN"], links: [{text: "VIEW ON PLAYSTORE", href: "https://play.google.com/store/apps/details?id=com.uptodd.uptoddapp"}]},
+    {name: "ProjectName1", role: "Android Developer", image: project, desc: "Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labore et dolore magna aliqua.", skillsArr: ["KOTLIN"], links: [{text: "VIEW ON PLAYSTORE", href: "https://www.linkedin.com/in/tanisha-bisht/"}]},
+    {name: "ProjectName2", role: "Android Developer", image: project, desc: "Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labore et dolore magna aliqua.", skillsArr: ["KOTLIN"], links: [{text: "VIEW ON PLAYSTORE", href: "https://www.linkedin.com/in/tanisha-bisht/"}]},
+    {name: "ProjectName3", role: "Android Developer", image: project, desc: "Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labore et dolore magna aliqua.", skillsArr: ["KOTLIN"], links: [{text: "VIEW ON PLAYSTORE", href: "https://www.linkedin.com/in/tanisha-bisht/"}]},
 ]
 
 export const instaLink = "https://www.instagram.com/photonmadnesss/"
