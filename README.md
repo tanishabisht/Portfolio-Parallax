@@ -1,7 +1,7 @@
 # Parallax themed personal website
 Link to the portfolio: https://tanishabisht.github.io/portfolio-template-3/
 
-<!-- ![Portfolio template - parallax theme](demo/demo.gif) -->
+![Portfolio template - parallax theme](demo/demo.gif)
 
 ## Who is this portfolio website for?
 It's perfect for developers seeking to showcase their work in a dynamic, engaging manner that captures the attention of visitors. The inclusion of an Automated Email feature for quick contact ensures that potential clients or collaborators can easily reach out, enhancing the site’s functionality and user engagement.
