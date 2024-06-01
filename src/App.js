@@ -1,4 +1,4 @@
-import { Navbar, Hero, About, Youtube, Skills, Projects, Contact, Footer } from './Components'
+import { Navbar, HeroSection, AboutSection, YoutubeSection, SkillsSection, ProjectsSection, ContactSection, Footer } from './Components'
 import './App.scss';
 
 
@@ -7,12 +7,12 @@ function App() {
   return (
     <div className='bg'>
       <Navbar />
-      <Hero />
-      <About />
-      <Youtube />
-      <Skills />
-      <Projects />
-      <Contact />
+      <HeroSection />
+      <AboutSection />
+      <YoutubeSection />
+      <SkillsSection />
+      <ProjectsSection />
+      <ContactSection />
       <Footer/>
     </div>
   );

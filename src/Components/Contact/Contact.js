@@ -1,24 +1,13 @@
-import { useRef, useState } from 'react';
-
-// parallax
 import { RellaxWrapper } from 'react-rellax-wrapper'
-
-// emailjs
+import { gitHubLink, linkedInLink, instaLink, youTubeLink } from '../../Content/variable'
+import { useRef, useState } from 'react';
 import emailjs from 'emailjs-com';
-
-// toastify
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
-// styling
+import shape2 from '../../Images/shape2.png'
 import './contact.scss'
 
-// images
-import shape2 from '../../Images/shape2.png'
-
-
-
-const About = () => {
+const ContactSection = () => {
 
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
@@ -30,7 +19,6 @@ const About = () => {
     const service_id = 'service_5cvz05d'
     const template_id = 'template_lvc7sxv'
     const user_id = 'user_nAvZsultEnCIpovi1phHY'
-
 
     const sendEmail = (e) => {
       e.preventDefault()
@@ -45,7 +33,6 @@ const About = () => {
       setMssg('')
     };
 
-
     return (
       <section id='contact' className='contact_section'>
         <RellaxWrapper speed={0.5} zIndex={-1}><img className='img_shape img_shape_4' src={shape2} alt='shape 3' /></RellaxWrapper>
@@ -56,10 +43,10 @@ const About = () => {
               <p className='para'>Feel free to connect with me :)</p>
             </div>
             <div className='social_icons'>
-              <a href='https://github.com/JishnuGoyal' target="_blank" rel="noreferrer"><i className="fab fa-github-square"></i></a>
-              <a href='https://www.linkedin.com/in/jishnu-goyal-4333521b3/' target="_blank" rel="noreferrer"><i className="fab fa-linkedin"></i></a>
-              <a href='https://www.instagram.com/jishnugoyal' target="_blank" rel="noreferrer"><i className="fab fa-instagram-square"></i></a>
-              <a href='https://www.youtube.com/channel/UCT0y1HRWXI9kLpVoyblWtQA' target="_blank" rel="noreferrer"><i className="fab fab fa-youtube-square"></i></a>
+              <a href={gitHubLink} target="_blank" rel="noreferrer"><i className="fab fa-github-square"></i></a>
+              <a href={linkedInLink} target="_blank" rel="noreferrer"><i className="fab fa-linkedin"></i></a>
+              <a href={instaLink} target="_blank" rel="noreferrer"><i className="fab fa-instagram-square"></i></a>
+              <a href={youTubeLink} target="_blank" rel="noreferrer"><i className="fab fab fa-youtube-square"></i></a>
             </div>
           </RellaxWrapper>
         </div>
@@ -77,6 +64,4 @@ const About = () => {
     )
 }
 
-
-
-export default About
+export default ContactSection
