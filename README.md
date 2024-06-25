@@ -1,5 +1,4 @@
 # Parallax themed personal website
-Link to the portfolio: https://tanishabisht.github.io/portfolio-template-3/
 
 ![Portfolio template - parallax theme](demo/demo.gif)
 
